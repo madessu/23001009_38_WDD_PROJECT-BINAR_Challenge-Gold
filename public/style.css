@@ -1,0 +1,245 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+    box-sizing: border-box;
+}
+:root {
+    --bg-primary: rgb(134, 128, 128);
+    --bg-secondary: rgb(200, 200, 201);
+    --txt-primary: #f7f7f7;
+    --txt-secondary: #222222;
+    --icons-bg-primary: salmon;
+    --font-japan:'Noto Sans JP', sans-serif;
+}
+
+.container {
+    display: block;
+    height: 100vh;
+    height: auto;
+    background-image: linear-gradient(20deg, #ff00ff4d,
+     #c71692be,
+     #740b54be,
+     #470a35c9,
+     #000000
+      );
+}
+
+header {
+    background: #4c6cc7;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom:15px solid black;
+    background-image: url(https://th.bing.com/th/id/R.db3a6526d9e75c4e7d754a9bb79a66db?rik=d%2fvYC%2b57dZSs%2bQ&riu=http%3a%2f%2fgclipart.com%2fwp-content%2fuploads%2f2017%2f10%2fMountain-clipart-border-free-images-the-cliparts-2-768x334.png&ehk=i%2buzCmbXArKwkepgUFH7U75iNjzTCYeYavr9UtkRG7g%3d&risl=&pid=ImgRaw&r=0);
+    background-size: 400px;
+    background-position-y: 25px;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    display: flex;
+    
+}
+
+li {
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: black;
+    margin-left: 125px;
+    height: 120px;
+    width: 120px;
+    transition: all 1.8s ease 0s;
+    filter: drop-shadow(1px 10px 20px orange);
+}
+
+li a:hover {
+    color: orange;
+    transition: all .5s ease 0s;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+.card {
+    width: 40%;
+    border: 1px solid green;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 32px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: -3px 5px 1px 1px rgb(0, 0, 0)
+}
+
+.card:hover {
+    margin-left: 15px;
+    box-shadow: -6px 10px 3px 5px rgba(0, 0, 0, 0.8);
+    transition: all .3s ease 0s;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 200%;
+
+}
+
+.description {
+    margin-top: 8px;
+    font-size: .9em;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 35px;
+    color: var(--icons-bg-primary);
+
+}
+
+.btn {
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--bg-secondary);
+}
+
+.btn:hover{
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+}
+
+.paralax {
+    height: 100vh;
+    background-image: url(serigala.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 30px;
+}
+
+.halo {
+    font-size: bolder;
+    color: orange;
+}
+
+.deskripsi {
+    margin-top: 10px;
+    color: white;
+}
+
+.wolf {
+    background-image: url(wolf.png);
+    max-width: 100%;
+    height: auto;
+    z-index: 3;
+    background-attachment: scroll;
+    background-position-x: -5%;
+    background-position-y: 110%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        max-width: 375px;
+        max-height: 667px;
+    }
+
+    .container2 {
+        display: none;
+    }
+    .card {
+        width: 95%;
+        font-size: 10px;
+        font-weight: 200;
+    }
+
+    header {
+        background-color: lightblue;   
+        border: none;
+        background-image: none;
+    }
+    .nav {
+        float: none;
+        position: relative;
+        font-size: 1px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 70px;
+    }
+
+    .nav ul, li {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .container2 {
+        display: none;
+    }
+    .card {
+        width: 95%;
+        font-size: 10px;
+        font-weight: 200;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        max-width: 60%;
+        font-size: 10px;
+        font-weight: 200;
+    }
+    /* .container {
+        display: none;
+    }
+    .container2 {
+        display: block;
+    }
+} */
+
+.navbot li {
+    display: flex;
+    list-style: none;
+}
